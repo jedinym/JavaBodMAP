@@ -2,31 +2,31 @@ package map.bod;
 
 public class Bod2D implements Bod
 {
-    private float x;
-    private float y;
+    private double x;
+    private double y;
 
-    public Bod2D(float _x, float _y)
+    public Bod2D(double _x, double _y)
     {
         x = _x;
         y = _y;
     }
 
     @Override
-    public float getX()
+    public double getX()
     {
         return x;
     }
 
     @Override
-    public float getY()
+    public double getY()
     {
         return y;
     }
 
     @Override
-    public float[] getXY()
+    public double[] getXY()
     {
-        return new float[] {x, y};
+        return new double[] {x, y};
     }
 
     @Override
@@ -49,7 +49,7 @@ public class Bod2D implements Bod
     }
 
     @Override
-    public float getDistance(Bod other)
+    public double getDistance(Bod other)
     {
         return (float)Math.sqrt((x*x) + (y*y));
     }
